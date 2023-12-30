@@ -48,8 +48,8 @@ function footer() {
 						
 					</div>
 					<hr />
-					<div className="d-sm-flex justify-content-center py-1 copyright">
-						<p >© Copyright <span className="fw-bold">MetroMart</span> 2023. All right reserved</p>
+					<div className="d-sm-flex justify-content-center py-1 copyright ">
+						<p className="text-center">© Copyright <span className="fw-bold">MetroMart</span> 2023. All right reserved</p>
 					</div>
 				</div>
 			</footer>
