@@ -2,6 +2,9 @@
 ::after,
 ::before {
 	text-transform: capitalize;
+	font-family: "Oswald", sans-serif;
+	font-family: "Outfit", sans-serif;
+	font-family: "Roboto Slab", serif;
 }
 
 body {
