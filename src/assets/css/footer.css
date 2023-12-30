@@ -1,5 +1,9 @@
+
 * {
   font-size: large;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 footer {
   background-color: black !important;

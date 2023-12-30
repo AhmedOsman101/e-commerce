@@ -2,6 +2,9 @@ import "../assets/css/footer.css";
 function footer() {
 	return (
 		<>
+			<link rel="preconnect" href="https://fonts.googleapis.com" />
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+			<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&family=Outfit:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
 			<footer className="bg-black text-light pt-3	">
 				<div className="container-fluid px-5 ">
 					<div className="row">
@@ -11,10 +14,10 @@ function footer() {
 							<h6 className="mt-4">subscribe</h6>
 							<h6 className="mb-2 mt-3">Get 10% off your first order</h6>
 							<div className="d-flex mt-3" >
-							<form method="get" className="order-form ">
-								<input type="text" name="search" placeholder="Enter your email" />
-								<button type="submit"><img src="src\assets\images\Send-icon.png" /></button>
-							</form>
+								<form method="get" className="order-form ">
+									<input type="text" name="search" placeholder="Enter your email" />
+									<button type="submit"><img src="src\assets\images\Send-icon.png" /></button>
+								</form>
 							</div>
 						</div>
 
@@ -45,7 +48,7 @@ function footer() {
 								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">FAQ</a></h6></li>
 								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">Contact</a></h6></li>							</ul>
 						</div>
-						
+
 					</div>
 					<hr />
 					<div className="d-sm-flex justify-content-center py-1 copyright ">
