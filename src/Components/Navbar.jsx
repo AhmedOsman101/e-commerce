@@ -2,7 +2,7 @@ import { Navbar, Nav, Container, Form, FormControl } from "react-bootstrap";
 
 function nav() {
 	return (
-		<Navbar bg="light" expand="lg">
+		<Navbar bg="light" expand="lg" className="mb-3">
 			<Container>
 				<Navbar.Brand href="#home">MetroMart</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
