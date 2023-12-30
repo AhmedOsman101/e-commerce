@@ -13,6 +13,7 @@ export default class App extends React.Component {
 				<TestingFunction Name="Ali" />
 				<TestingClass Name="Othman" /> */}
 				<div>Hello update</div>
+				<div>Hyman</div>
 				<Counter />
 				<TestingFunction Name="ahmad"/>
 			</>
