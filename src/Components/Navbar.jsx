@@ -8,9 +8,18 @@ function nav() {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="m-auto">
-						<Nav.Link href="#home">Home</Nav.Link>
-						<Nav.Link href="#contact">Contact</Nav.Link>
-						<Nav.Link href="#signup">Sign Up</Nav.Link>
+						<Nav.Link href="#home" className="me-4">
+							Home
+						</Nav.Link>
+						<Nav.Link href="#contact" className="me-4">
+							Contact
+						</Nav.Link>
+						<Nav.Link href="#contact" className="me-4">
+							About
+						</Nav.Link>
+						<Nav.Link href="#signup" className="me-4">
+							Sign Up
+						</Nav.Link>
 					</Nav>
 					<Form className="d-flex">
 						<FormControl
