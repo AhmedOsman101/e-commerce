@@ -1,16 +1,19 @@
-form {
+*{
+  font-size: large;
+}
+.search-form {
     position: relative;
 }
-input {
+.search-form input {
     background-color: #F5F5F5; 
     flex-grow: 1;
     padding: 10px;
     border: none;
     border-radius: 8px;
-    width: 240px;
+    width: 260px;
   }
   
-  button {
+  .search-form button {
     position: absolute;
     top: 7px;
     right: 1px;
@@ -20,7 +23,7 @@ input {
     user-select: none;
   }
   
-  img {
+  .search-form img {
     height: 20px; 
   }
   

@@ -4,7 +4,7 @@ import "../assets/css/nav.css";
 function nav() {
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg">
+			<nav className="navbar navbar-expand-lg mt-3">
 				<div className="container">
 					<a className="navbar-brand fw-bold" href="#">
 						MetroMart
@@ -30,14 +30,14 @@ function nav() {
 						</ul>
 					</div>
 
-					<form method="get">
+					<form method="get" className="search-form">
 						<input type="text" name="search" placeholder="What are you looking for ?" />
 						<button type="submit"><img src="src\assets\images\Search_icon.png" alt="Search" /></button>
 					</form>
 
 				</div>
 			</nav>
-
+			<hr/>
 		</>
 	);
 }
