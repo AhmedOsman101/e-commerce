@@ -2,11 +2,11 @@ import "../assets/css/footer.css";
 function footer() {
 	return (
 		<>
-			<footer className="bg-black text-light pt-5">
-				<div className="container-fluid px-5">
+			<footer className="bg-black text-light pt-3	">
+				<div className="container-fluid px-5 ">
 					<div className="row">
 
-						<div className="col">
+						<div className="col-lg-3  col-md-6 col-sm-12 mt-5">
 							<h4 className="fw-bold">MetroMart</h4>
 							<h6 className="mt-4">subscribe</h6>
 							<h6 className="mb-2 mt-3">Get 10% off your first order</h6>
@@ -18,7 +18,7 @@ function footer() {
 							</div>
 						</div>
 
-						<div className="col">
+						<div className="col-lg-3 col-md-6 col-sm-12 mt-5">
 							<h4>Support</h4>
 							<ul className="list-unstyled pt-2">
 								<li className="py-1"><h6>Zakir Hussein st., Nasr<br />city, cairo, Egypt</h6></li>
@@ -27,7 +27,7 @@ function footer() {
 
 							</ul>
 						</div>
-						<div className="col">
+						<div className="col-lg-3 col-md-6 col-sm-12 mt-5">
 							<h4>Account</h4>
 							<ul className="list-unstyled pt-2">
 								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">My Account</a></h6></li>
@@ -37,7 +37,7 @@ function footer() {
 								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">Shop</a></h6></li>
 							</ul>
 						</div>
-						<div className="col">
+						<div className="col-lg-3 col-md-6 col-sm-12 mt-5">
 							<h4>Quick Link</h4>
 							<ul className="list-unstyled pt-2">
 								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">Privacy Policy</a></h6></li>
