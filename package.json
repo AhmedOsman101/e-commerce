@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "-": "^0.0.1",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  }
+}
