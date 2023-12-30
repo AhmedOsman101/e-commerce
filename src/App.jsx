@@ -12,6 +12,7 @@ export default class App extends React.Component {
 				{/* <TestingFunction Name="Ahmad" />
 				<TestingFunction Name="Ali" />
 				<TestingClass Name="Othman" /> */}
+				<div>Hello</div>
 				<Counter />
 				<TestingFunction Name="ahmad"/>
 			</>
