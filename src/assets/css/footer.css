@@ -5,22 +5,23 @@ footer {
 	height: max-content;
 	position: fixed;
 	bottom: 0;
+}
+.cont {
 	display: flex;
 	justify-content: space-between;
+	gap: 6%;
 	padding-left: 9%;
 	padding-right: 7%;
 	padding-top: 5.5%;
 	padding-bottom: 3.5%;
-    gap: 6%;
 }
-
-footer .column {
+.cont .column {
 	flex: 1 0 20%;
 	display: flex;
 	flex-direction: column;
 }
 
-footer button.send {
+.cont button.send {
 	background-color: black;
 	position: absolute;
 	right: 2px;
@@ -49,7 +50,6 @@ footer button.send {
 	box-shadow: 0 0 0px 2px rgb(255 255 255 / 52%);
 }
 
-
-footer form{
-    margin-top: 1rem;
+.cont form {
+	margin-top: 1rem;
 }

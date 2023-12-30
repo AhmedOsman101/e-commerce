@@ -3,6 +3,7 @@ function Footer() {
 	return (
 		<>
 			<footer>
+				<div className="cont">
 				<div className="column">
 					<div className="d-flex flex-column gap-3">
 						<h4>MetroMart</h4>
@@ -47,6 +48,14 @@ function Footer() {
 				</div>
 				<div className="column"></div>
 				<div className="column"></div>
+				</div>
+			<hr />
+			<div className="d-sm-flex justify-content-center py-1 copyright ">
+				<p className="text-center">
+					© Copyright <span className="fw-bold">MetroMart</span> 2023.
+					All right reserved
+				</p>
+			</div>
 			</footer>
 		</>
 	);
