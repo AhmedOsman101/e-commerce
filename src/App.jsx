@@ -16,7 +16,7 @@ export default class App extends React.Component {
 				<TestingFunction Name="ahmad"/>
 			</>
 		);
-	}
+	}adsfasdfsdaf
 }
 
 {
