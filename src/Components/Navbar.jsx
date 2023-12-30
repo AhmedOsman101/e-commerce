@@ -2,7 +2,7 @@ import { Navbar, Nav, Container, Form, FormControl } from "react-bootstrap";
 
 function nav() {
 	return (
-		<Navbar bg="light" expand="lg">
+		<Navbar expand="lg">
 			<Container>
 				<Navbar.Brand href="#home">MetroMart</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -12,7 +12,7 @@ function nav() {
 						<Nav.Link href="#contact">Contact</Nav.Link>
 						<Nav.Link href="#signup">Sign Up</Nav.Link>
 					</Nav>
-					<Form className="d-flex">
+					<Form className="d-flex search-form">
 						<FormControl
 							type="search"
 							placeholder="What are you looking for ?"

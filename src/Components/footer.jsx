@@ -30,20 +30,20 @@ function footer() {
 						<div className="col">
 							<h4>Account</h4>
 							<ul className="list-unstyled pt-2">
-								<li className="py-1"><h6><a href="#">My Account</a></h6></li>
-								<li className="py-1"><h6><a href="#">Login / Register</a></h6></li>
-								<li className="py-1"><h6><a href="#">Cart</a></h6></li>
-								<li className="py-1"><h6><a href="#">Wishlist</a></h6></li>
-								<li className="py-1"><h6><a href="#">Shop</a></h6></li>
+								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">My Account</a></h6></li>
+								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">Login / Register</a></h6></li>
+								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">Cart</a></h6></li>
+								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">Wishlist</a></h6></li>
+								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">Shop</a></h6></li>
 							</ul>
 						</div>
 						<div className="col">
 							<h4>Quick Link</h4>
 							<ul className="list-unstyled pt-2">
-								<li className="py-1"><h6><a href="#">Privacy Policy</a></h6></li>
-								<li className="py-1"><h6><a href="#">Terms of Use</a></h6></li>
-								<li className="py-1"><h6><a href="#">FAQ</a></h6></li>
-								<li className="py-1"><h6><a href="#">Contact</a></h6></li>							</ul>
+								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">Privacy Policy</a></h6></li>
+								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">Terms of Use</a></h6></li>
+								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">FAQ</a></h6></li>
+								<li className="py-1"><h6><a href="#" className="text-decoration-none text-light">Contact</a></h6></li>							</ul>
 						</div>
 						
 					</div>
