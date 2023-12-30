@@ -1,3 +1,6 @@
+nav {
+	font-family: "Roboto Slab", serif;
+}
 form {
 	position: relative;
 }
@@ -6,7 +9,7 @@ nav .form-control {
 	padding: 10px;
 	border: none;
 	border-radius: 8px;
-	width: 250px;
+	min-width: 260px;
 }
 
 nav button {
