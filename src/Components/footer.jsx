@@ -1,7 +1,6 @@
-
 function footer() {
 	return (
-		<>	
+		<>
 			<h1>Hello footer</h1>
 		</>
 	);
