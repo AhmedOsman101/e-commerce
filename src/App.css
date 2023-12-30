@@ -1,5 +1,3 @@
-
-
 *,
 ::after,
 ::before {
@@ -8,6 +6,11 @@
 
 body {
 	min-height: 100vh;
+}
+
+nav form,
+footer form {
+	position: relative;
 }
 
 a {
