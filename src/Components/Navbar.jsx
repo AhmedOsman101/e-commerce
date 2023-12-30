@@ -2,32 +2,36 @@ import { Navbar, Nav, Container, Form, FormControl } from "react-bootstrap";
 
 function nav() {
 	return (
-		<Navbar expand="lg">
-			<Container>
-				<Navbar.Brand href="#home">MetroMart</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="m-auto">
-						<Nav.Link href="#home">Home</Nav.Link>
-						<Nav.Link href="#contact">Contact</Nav.Link>
-						<Nav.Link href="#signup">Sign Up</Nav.Link>
-					</Nav>
-					<Form className="d-flex search-form">
-						<FormControl
-							type="search"
-							placeholder="What are you looking for ?"
-							aria-label="Search"
-						/>
-						<button type="submit">
-							<img
-								src="src\assets\images\Search_icon.png"
-								alt="Search"
+		<>
+			<Navbar expand="lg mt-3">
+				<Container>
+					<Navbar.Brand href="#home" className="fw-bold">MetroMart</Navbar.Brand>
+					<Navbar.Toggle aria-controls="basic-navbar-nav" />
+					<Navbar.Collapse id="basic-navbar-nav">
+						<Nav className="m-auto">
+							<Nav.Link href="#home" className="me-4 fw-bold">Home</Nav.Link>
+							<Nav.Link href="#contact" className="me-4 fw-bold">Contact</Nav.Link>
+							<Nav.Link href="#contact" className="me-4 fw-bold">About</Nav.Link>
+							<Nav.Link href="#signup" className="me-4 fw-bold">Sign Up</Nav.Link>
+						</Nav>
+						<Form className="d-flex search-form">
+							<FormControl
+								type="search"
+								placeholder="What are you looking for ?"
+								aria-label="Search"
 							/>
-						</button>
-					</Form>
-				</Navbar.Collapse>
-			</Container>
-		</Navbar>
+							<button type="submit">
+								<img
+									src="src\assets\images\Search_icon.png"
+									alt="Search"
+								/>
+							</button>
+						</Form>
+					</Navbar.Collapse>
+				</Container>
+			</Navbar>
+			<hr />
+		</>
 	);
 }
 
