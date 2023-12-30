@@ -12,7 +12,7 @@ export default class App extends React.Component {
 				{/* <TestingFunction Name="Ahmad" />
 				<TestingFunction Name="Ali" />
 				<TestingClass Name="Othman" /> */}
-				<div>Hello world</div>
+				<div>Hello update</div>
 				<Counter />
 				<TestingFunction Name="ahmad"/>
 			</>
