@@ -12,12 +12,13 @@ export default class App extends React.Component {
 				{/* <TestingFunction Name="Ahmad" />
 				<TestingFunction Name="Ali" />
 				<TestingClass Name="Othman" /> */}
-				<div>Hello</div>
+				<div>Hello update</div>
+				<div>Hyman</div>
 				<Counter />
 				<TestingFunction Name="ahmad"/>
 			</>
 		);
-	}adsfasdfsdaf
+	}
 }
 
 {
