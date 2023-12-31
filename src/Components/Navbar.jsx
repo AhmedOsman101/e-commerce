@@ -5,14 +5,14 @@ function nav() {
 		<>
 			<Navbar expand="lg mt-3">
 				<Container>
-					<Navbar.Brand href="#home" className="fw-bold">MetroMart</Navbar.Brand>
+					<Navbar.Brand href="/e-commerce/" className="fw-bold">MetroMart</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="m-auto">
-							<Nav.Link href="#home" className="me-4 fw-bold">Home</Nav.Link>
+							<Nav.Link href="/e-commerce/" className="me-4 fw-bold">Home</Nav.Link>
 							<Nav.Link href="#contact" className="me-4 fw-bold">Contact</Nav.Link>
 							<Nav.Link href="#contact" className="me-4 fw-bold">About</Nav.Link>
-							<Nav.Link href="#signup" className="me-4 fw-bold">Sign Up</Nav.Link>
+							<Nav.Link href="/e-commerce/signUp" className="me-4 fw-bold">Sign Up</Nav.Link>
 						</Nav>
 						<Form className="d-flex search-form">
 							<FormControl

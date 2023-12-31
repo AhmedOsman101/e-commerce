@@ -19,7 +19,7 @@ function Login() {
 						<input type="password" name="password" className="mt-5 pass-input" required/>
 						<label className="pass-label">Password</label>
 						<br />
-						<button className="btn btn-danger mt-4 w-50" type="submit" style={{height:50}}>Create Account</button>
+						<button className="btn btn-danger mt-4 " type="submit" style={{width:386,height:50}}>Create Account</button>
 						<br />
 					</form>
 					<button className="btn btn-light border mt-2 " style={{width:386,height:50,marginLeft:150}}><img src="src\assets\images\google-icon.svg" /> Sign Up with Google</button>
