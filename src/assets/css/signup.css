@@ -1,4 +1,4 @@
-.login {
+.signup {
   width: 100%;
 }
 
@@ -6,13 +6,13 @@
   position: relative;
 }
 
-.login-form input {
+.signup-form input {
   border: none;
   border-bottom: 1px solid silver;
   width: 380px;
   outline: none;
 }
-.login-form .name-label {
+.signup-form .name-label {
   position: absolute;
   top: 70px;
   left: 0;
@@ -20,14 +20,14 @@
   pointer-events: none;
   transition: all 0.3s ease;
 }
-.login-form .name-input:focus ~ .name-label,
-.login-form .name-input:valid ~ .name-label {
+.signup-form .name-input:focus ~ .name-label,
+.signup-form .name-input:valid ~ .name-label {
   transform: translateY(-20px);
   font-size: 15px;
   color: #4158d0;
 }
 
-.login-form .email-label {
+.signup-form .email-label {
   position: absolute;
   top: 145px;
   left: 0;
@@ -35,14 +35,14 @@
   pointer-events: none;
   transition: all 0.3s ease;
 }
-.login-form .email-input:focus ~ .email-label,
-.login-form .email-input:valid ~ .email-label {
+.signup-form .email-input:focus ~ .email-label,
+.signup-form .email-input:valid ~ .email-label {
   transform: translateY(-20px);
   font-size: 15px;
   color: #4158d0;
 }
 
-.login-form .pass-label {
+.signup-form .pass-label {
   position: absolute;
   top: 220PX;
   left: 0;
@@ -51,8 +51,8 @@
   transition: all 0.3s ease;
 }
 
-.login-form .pass-input:focus ~ .pass-label,
-.login-form .pass-input:valid ~ .pass-label {
+.signup-form .pass-input:focus ~ .pass-label,
+.signup-form .pass-input:valid ~ .pass-label {
   transform: translateY(-20px);
   font-size: 15px;
   color: #4158d0;

@@ -2,13 +2,13 @@ import "../assets/css/signup.css";
 function Login() {
 	return (
 		<>
-			<div className="row login">
+			<div className="row signup">
 				<div className="col-lg-6 col-md-5">
 					<img src="src\assets\images\signup.svg"  />
 				</div>
 				<div className="col-lg-6 col-md-7 align-self-center">
 					<h1 style={{marginLeft:150}}>Create an account</h1>
-					<form action="post" className="form login-form"  style={{marginLeft:150}}>
+					<form action="post" className="form signup-form"  style={{marginLeft:150}}>
 						<h6>Enter your details below</h6>
                         <input type="text" name="name" className="mt-5 name-input" required/>
 						<label className="name-label">Name</label>
