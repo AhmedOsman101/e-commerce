@@ -1,0 +1,32 @@
+import "../assets/css/signup.css";
+function Login() {
+	return (
+		<>
+			<div className="row login">
+				<div className="col-lg-6 col-md-5">
+					<img src="src\assets\images\signup.svg"  />
+				</div>
+				<div className="col-lg-6 col-md-7 align-self-center">
+					<h1 style={{marginLeft:150}}>Create an account</h1>
+					<form action="post" className="form login-form"  style={{marginLeft:150}}>
+						<h6>Enter your details below</h6>
+                        <input type="text" name="name" className="mt-5 name-input" required/>
+						<label className="name-label">Name</label>
+						<br />
+						<input type="text" name="email" className="mt-5 email-input" required/>
+						<label className="email-label">Email or Phone Number</label>
+						<br />
+						<input type="password" name="password" className="mt-5 pass-input" required/>
+						<label className="pass-label">Password</label>
+						<br />
+						<button className="btn btn-danger mt-4 w-50" type="submit" style={{height:50}}>Create Account</button>
+						<br />
+					</form>
+					<button className="btn btn-light border mt-2 " style={{width:386,height:50,marginLeft:150}}><img src="src\assets\images\google-icon.svg" /> Sign Up with Google</button>
+				</div>
+			</div>
+		</>
+	);
+}
+export default Login;
+	

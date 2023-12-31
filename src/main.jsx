@@ -5,8 +5,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 /* components imports */
 import App from "./App";
 import Nav from "./Components/Navbar";
-import Footer from "./components/Footer";
-import Login from "./Components/login";
+import Footer from "./Components/Footer";
+import Login from "./Components/Login";
+import Signup from "./Components/SignUp";
 /* css files imports */
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
@@ -21,6 +22,7 @@ root.render(
 			<Routes>
 				<Route path="/e-commerce/" element={<App />} />
 				<Route path="/e-commerce/login" element={<Login />} />
+				<Route path="/e-commerce/signUp" element={<Signup />} />
 			</Routes>
 
 			<Footer />
