@@ -19,6 +19,7 @@ function Login() {
 						<button className="btn btn-danger mt-4 w-50 mb-3" type="submit" style={{height:50}}>Login</button>
 						<br />
 						<a href="#" className="text-danger text-decoration-none mt-5 " >Forget Password?</a>
+						<h6 className="text-danger mt-2" >Don&lsquo;t have account? <a href="/e-commerce/signup" className="text-danger" > Create account</a></h6>
 					</form>
 				</div>
 			</div>
