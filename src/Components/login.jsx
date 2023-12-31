@@ -1,8 +1,28 @@
+import "../assets/css/login.css";
 function Login() {
 	return (
 		<>
-			<h1>Login</h1>
+			<div className="row login">
+				<div className="col-lg-6 col-md-5">
+					<img src="src\assets\images\login.svg"  />
+				</div>
+				<div className="col-lg-6 col-md-7 align-self-center">
+					<h1 style={{marginLeft:150}}>Log in to Exclusive</h1>
+					<form action="post" className="form login-form"  style={{marginLeft:150}}>
+						<h6>Enter your details below</h6>
+						<input type="text" name="email" className="mt-5 email-input" required/>
+						<label className="email-label">Email or Phone Number</label>
+						<br />
+						<input type="password" name="password" className="mt-5 pass-input" required/>
+						<label className="pass-label">Password</label>
+						<br />
+						<button className="btn btn-danger mt-4" type="submit" style={{width:120,height:50}}>Login</button>
+						<a href="#" className="text-danger text-decoration-none m-5 ">Forget Password?</a>
+					</form>
+				</div>
+			</div>
 		</>
 	);
 }
 export default Login;
+	

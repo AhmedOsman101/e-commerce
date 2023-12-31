@@ -4,7 +4,7 @@ function footer() {
 		<>
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-			<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&family=Outfit:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
+			<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;0,800;1,600&display=swap" rel="stylesheet" />
 			<footer className="bg-black text-light pt-3	">
 				<div className="container-fluid px-5 ">
 					<div className="row">
