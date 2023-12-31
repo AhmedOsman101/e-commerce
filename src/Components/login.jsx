@@ -16,8 +16,9 @@ function Login() {
 						<input type="password" name="password" className="mt-5 pass-input" required/>
 						<label className="pass-label">Password</label>
 						<br />
-						<button className="btn btn-danger mt-4" type="submit" style={{width:120,height:50}}>Login</button>
-						<a href="#" className="text-danger text-decoration-none m-5 ">Forget Password?</a>
+						<button className="btn btn-danger mt-4 w-50 mb-3" type="submit" style={{height:50}}>Login</button>
+						<br />
+						<a href="#" className="text-danger text-decoration-none mt-5 " >Forget Password?</a>
 					</form>
 				</div>
 			</div>
