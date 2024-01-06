@@ -5,15 +5,23 @@ const sql = require("mysql2");
 // const bodyParser = require("body-parser");
 const cors = require("cors");
 const port = 5011; // the port on which the server will start
+// first method (with require):
+require("dotenv").config();
+
+// print the values:
+const DB_HOST = process.env.DB_HOST;
+const DB_NAME = process.env.DB_NAME;
+const DB_PASSWORD = process.env.DB_PASSWORD;
+const DB_USER = process.env.DB_USER;
 
 const App = express(); // Create a new Express application
 App.use(express.json()); // Use express.json() middleware for parsing JSON data of incoming requests
 App.use(cors());
 const connection = sql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "",
-	database: "test",
+	host: DB_HOST,
+	user: DB_USER,
+	password: DB_PASSWORD,
+	database: DB_NAME,
 });
 
 // Show all products
