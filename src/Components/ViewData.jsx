@@ -5,7 +5,7 @@ import axios from "axios";
 export default function ViewData() {
 	useEffect(() => {
 		axios
-			.get("http://localhost:5011")
+			.get("https://tryingtodeploy-rton.onrender.com/data")
 			.then(function (response) {
 				// handle success
 				console.log(response.data);

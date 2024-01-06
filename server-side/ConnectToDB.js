@@ -3,7 +3,7 @@ const express = require("express");
 const sql = require("mysql2");
 // const bodyParser = require("body-parser");
 const cors = require("cors");
-const port = 5011; // the port on which the server will start
+const port = process.env.PORT || 5011; // the port on which the server will start
 // first method (with require):
 require("dotenv").config();
 
