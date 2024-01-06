@@ -24,9 +24,9 @@ const connection = sql.createConnection({
 	database: DB_NAME,
 });
 
-// Show all products
+// Show all users
 App.get("/", (req, res) => {
-	const query = "SELECT * FROM `products`";
+	const query = "SELECT * FROM `users`";
 	connection.execute(query, (err, data) => {
 		if (err) {
 			res.send(`ERROR: ${err}`);
@@ -39,7 +39,7 @@ App.get("/", (req, res) => {
 // select specific user to show
 App.get("/User/:id", (req, res) => {
 	const userID = req.params.id;
-	const query = "SELECT * FROM `products` WHERE id = ?";
+	const query = "SELECT * FROM `users` WHERE id = ?";
 	connection.execute(query, [userID], (err, data) => {
 		if (err) {
 			res.send(`ERROR: ${err}`);
@@ -49,11 +49,11 @@ App.get("/User/:id", (req, res) => {
 	});
 });
 
-// Handle POST requests to add products
+// Handle POST requests to add users
 App.post("/User/Add", (req, res) => {
 	const { username, email, password } = req.body;
 	const values = [username, email, password];
-	let query = "SELECT email FROM `products` WHERE `email` = ?";
+	let query = "SELECT email FROM `users` WHERE `email` = ?";
 	connection.execute(query, [email], (err, data) => {
 		if (err) {
 			res.send(`ERROR: ${err}`);
@@ -61,13 +61,13 @@ App.post("/User/Add", (req, res) => {
 			res.send("ERROR: this mail exists");
 		} else {
 			query =
-				"INSERT INTO `products`(`username`, `email`, `password`) VALUES (?, ?, ?)";
+				"INSERT INTO `users`(`username`, `email`, `password`) VALUES (?, ?, ?)";
 			connection.execute(query, values, (err) => {
 				if (err) {
 					res.send(`ERROR: ${err}`);
 				} else {
 					connection.execute(
-						"SELECT * FROM `products`",
+						"SELECT * FROM `users`",
 						(err, data) => {
 							if (err) {
 								res.send(`ERROR: ${err}`);
@@ -82,10 +82,10 @@ App.post("/User/Add", (req, res) => {
 	});
 });
 
-// Handle DELETE requests to remove products
+// Handle DELETE requests to remove users
 App.delete("/User/Delete/:id", (req, res) => {
 	const userID = req.params.id;
-	const query = "DELETE FROM `products` WHERE id = ?";
+	const query = "DELETE FROM `users` WHERE id = ?";
 	connection.execute(query, [userID], (err, data) => {
 		if (err) {
 			res.send(`ERROR: ${err}`);
@@ -97,10 +97,10 @@ App.delete("/User/Delete/:id", (req, res) => {
 	});
 });
 
-// Handle PUT requests to update products
+// Handle PUT requests to update users
 App.delete("/User/Update/:id", (req, res) => {
 	const userID = req.params.id;
-	const query = "DELETE FROM `products` WHERE id = ?";
+	const query = "DELETE FROM `users` WHERE id = ?";
 	connection.execute(query, [userID], (err, data) => {
 		if (err) {
 			res.send(`ERROR: ${err}`);
