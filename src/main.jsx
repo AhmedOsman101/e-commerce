@@ -22,7 +22,6 @@ root.render(
 			<Routes>
 				<Route path="/e-commerce/" element={<App />} />
 				<Route path="/e-commerce/login" element={<Login />} />
-				<Route path="/e-commerce/signUp" element={<Signup />} />
 			</Routes>
 
 			{/* <Footer /> */}
