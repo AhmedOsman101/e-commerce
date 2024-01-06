@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-// Import the required modules
 const express = require("express");
 const sql = require("mysql2");
 // const bodyParser = require("body-parser");
@@ -28,11 +27,8 @@ const connection = sql.createConnection({
 App.get("/", (req, res) => {
 	const query = "SELECT * FROM `users`";
 	connection.execute(query, (err, data) => {
-		if (err) {
-			res.send(`ERROR: ${err}`);
-		} else {
-			res.json(data);
-		}
+		if (err) res.send(`ERROR: ${err}`);
+		else res.json(data);
 	});
 });
 
@@ -41,11 +37,8 @@ App.get("/User/:id", (req, res) => {
 	const userID = req.params.id;
 	const query = "SELECT * FROM `users` WHERE id = ?";
 	connection.execute(query, [userID], (err, data) => {
-		if (err) {
-			res.send(`ERROR: ${err}`);
-		} else {
-			res.send(data);
-		}
+		if (err) res.send(`ERROR: ${err}`);
+		else res.send(data);
 	});
 });
 
@@ -55,27 +48,18 @@ App.post("/User/Add", (req, res) => {
 	const values = [username, email, password];
 	let query = "SELECT email FROM `users` WHERE `email` = ?";
 	connection.execute(query, [email], (err, data) => {
-		if (err) {
-			res.send(`ERROR: ${err}`);
-		} else if (0 < data.length) {
-			res.send("ERROR: this mail exists");
-		} else {
+		if (err) res.send(`ERROR: ${err}`);
+		else if (0 < data.length) res.send("ERROR: this mail exists");
+		else {
 			query =
 				"INSERT INTO `users`(`username`, `email`, `password`) VALUES (?, ?, ?)";
 			connection.execute(query, values, (err) => {
-				if (err) {
-					res.send(`ERROR: ${err}`);
-				} else {
-					connection.execute(
-						"SELECT * FROM `users`",
-						(err, data) => {
-							if (err) {
-								res.send(`ERROR: ${err}`);
-							} else {
-								res.send(data);
-							}
-						}
-					);
+				if (err) res.send(`ERROR: ${err}`);
+				else {
+					connection.execute("SELECT * FROM `users`", (err, data) => {
+						if (err) res.send(`ERROR: ${err}`);
+						else res.send(data);
+					});
 				}
 			});
 		}
@@ -87,28 +71,25 @@ App.delete("/User/Delete/:id", (req, res) => {
 	const userID = req.params.id;
 	const query = "DELETE FROM `users` WHERE id = ?";
 	connection.execute(query, [userID], (err, data) => {
-		if (err) {
-			res.send(`ERROR: ${err}`);
-		} else if (data.affectedRows === 0) {
+		if (err) res.send(`ERROR: ${err}`);
+		else if (data.affectedRows === 0)
 			res.send("ERROR: USER WAS NOT FOUND !!!");
-		} else {
-			res.send("USER DELETED SUCCESSFULLY");
-		}
+		else res.send("USER DELETED SUCCESSFULLY");
 	});
 });
 
 // Handle PUT requests to update users
-App.delete("/User/Update/:id", (req, res) => {
+App.put("/User/Update/:id", (req, res) => {
 	const userID = req.params.id;
-	const query = "DELETE FROM `users` WHERE id = ?";
-	connection.execute(query, [userID], (err, data) => {
-		if (err) {
-			res.send(`ERROR: ${err}`);
-		} else if (data.affectedRows === 0) {
+	const { username, email, password } = req.body;
+	const values = [username, email, password, userID];
+	const query =
+		"UPDATE `users` SET `username` = ?, `email` = ?, `password` = ? WHERE `id` = ?";
+	connection.execute(query, values, (err, data) => {
+		if (err) res.send(`ERROR: ${err}`);
+		else if (data.affectedRows === 0)
 			res.send("ERROR: USER WAS NOT FOUND !!!");
-		} else {
-			res.send("USER DELETED SUCCESSFULLY");
-		}
+		else res.send("USER UPDATED SUCCESSFULLY");
 	});
 });
 

@@ -17,7 +17,6 @@ import "./assets/css/App.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<BrowserRouter>
 			{/* <Nav /> */}
 
 			{/* <Routes>
@@ -27,6 +26,5 @@ root.render(
 			</Routes> */}
 			<ViewData></ViewData>
 			{/* <Footer /> */}
-		</BrowserRouter>
 	</React.StrictMode>
 );

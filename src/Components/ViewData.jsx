@@ -1,12 +1,11 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 import { useEffect } from "react";
-const axios = require("axios");
-
+import axios from "axios";
 export default function ViewData() {
 	useEffect(() => {
 		axios
-			.get("http://localhost/php/revision/index.php")
+			.get("http://localhost:5011")
 			.then(function (response) {
 				// handle success
 				console.log(response.data);
