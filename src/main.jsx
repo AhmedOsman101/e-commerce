@@ -11,7 +11,7 @@ import Login from "./Components/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/css/nav.css";
 import "./assets/css/footer.css";
-import "./App.css";
+import "./assets/css/App.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
